@@ -45,7 +45,7 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Please enter your license key: ");
             String key = scanner.nextLine();
-            
+
             License.getInstance().validate(key);
         }
 
@@ -73,6 +73,9 @@ public class Main {
         System.out.println("System OS Family        : " + License.getInstance().getSystemInformation().getOSFamily());
         System.out.println("System Java             : " + License.getInstance().getSystemInformation().getJava());
         System.out.println("System CPU Core Count   : " + License.getInstance().getSystemInformation().getCPUCoreCount());
+        System.out.println("System is Virtual       : " + License.getInstance().getSystemInformation().isVirtual());
+        System.out.println("System is Cloud         : " + License.getInstance().getSystemInformation().isCloud());
+        System.out.println("System is Container     : " + License.getInstance().getSystemInformation().isContainer());
         System.out.println("-------------------------------------------------");
     }
 }
