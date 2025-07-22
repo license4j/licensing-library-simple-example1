@@ -14,7 +14,7 @@ public class Main {
                  * Product hash code is displayed on the License Server products
                  * page.
                  */
-                .product("product-hash-code-here")
+                .product("product-hash-value-here")
                 /**
                  * Default license file will be used, to use different location
                  * un-comment below.
@@ -35,7 +35,6 @@ public class Main {
          * This must be called on each application startup.
          */
         License.getInstance().validate();
-        printLicenseDetails();
 
         /**
          * If previously saved license is invalid, or there is no license on
