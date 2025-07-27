@@ -14,7 +14,7 @@ public class Main {
                  * Product hash code is displayed on the License Server products
                  * page.
                  */
-                .product("product-hash-value-here")
+                .product("8EF12B93899E09502BE7352098F8EB35")
                 /**
                  * Default license file will be used, to use different location
                  * un-comment below.
